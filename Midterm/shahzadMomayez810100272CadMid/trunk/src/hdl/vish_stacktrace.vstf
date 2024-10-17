@@ -1,0 +1,72 @@
+# Current time Sat Dec 09 02:11:18 2023
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 74735234. Traceback:
+# 0    0x74735234: '<unknown (@0x74735234)>'
+# 1    0x20200a2c: '<unknown (@0x20200a2c)>'
+# 2    0x77675e1e: 'RtlAllocateHeap + 0x3e'
+# 3    0x72561c63: 'ldiv + 0x93'
+# 4    0x7256d5cb: 'calloc + 0x18'
+# 5    0x0078219d: 'win_tb_CoreExceptionFilter + 0x14b7d'
+StackWalk failed 0
+# End of Stack Trace
+
+# Current time Sat Dec 09 02:11:18 2023
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 74735234. Traceback:
+# 0    0x74735234: '<unknown (@0x74735234)>'
+# 1    0x20200a2c: '<unknown (@0x20200a2c)>'
+# 2    0x77675e1e: 'RtlAllocateHeap + 0x3e'
+# 3    0x72561c63: 'ldiv + 0x93'
+# 4    0x7256d5cb: 'calloc + 0x18'
+# 5    0x0078219d: 'win_tb_CoreExceptionFilter + 0x14b7d'
+StackWalk failed 0
+# End of Stack Trace
+
+# Current time Sat Dec 09 02:11:18 2023
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 74735234. Traceback:
+# 0    0x74735234: '<unknown (@0x74735234)>'
+# 1    0x20200a2c: '<unknown (@0x20200a2c)>'
+# 2    0x77675e1e: 'RtlAllocateHeap + 0x3e'
+# 3    0x72561c63: 'ldiv + 0x93'
+# 4    0x7256d5cb: 'calloc + 0x18'
+# 5    0x0078219d: 'win_tb_CoreExceptionFilter + 0x14b7d'
+StackWalk failed 0
+# End of Stack Trace
+
+# Current time Sat Dec 09 02:11:18 2023
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 74735234. Traceback:
+# 0    0x74735234: '<unknown (@0x74735234)>'
+# 1    0x20200a2c: '<unknown (@0x20200a2c)>'
+# 2    0x77675e1e: 'RtlAllocateHeap + 0x3e'
+# 3    0x72561c63: 'ldiv + 0x93'
+# 4    0x7256d5cb: 'calloc + 0x18'
+# 5    0x0078219d: 'win_tb_CoreExceptionFilter + 0x14b7d'
+StackWalk failed 0
+# End of Stack Trace
+

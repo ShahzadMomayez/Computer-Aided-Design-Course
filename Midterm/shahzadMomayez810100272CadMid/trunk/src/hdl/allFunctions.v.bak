@@ -1,0 +1,108 @@
+/*module Adder(
+  input [8:0] A,
+  input [8:0] B,
+  output [8:0] Sum
+);
+
+
+  assign Sum = A + B ;
+
+
+endmodule*/
+
+/*module counter16 (
+  input clk,
+  input reset,
+  input en,
+  output reg cout,
+  output reg [3:0] count
+);
+
+always @(posedge clk or posedge reset) begin
+  if (reset) begin
+    count <= 0;
+    cout <= 0;
+  end else if (en) begin
+    count <= count + 1;
+    cout <= &count;
+  end
+end
+
+endmodule
+*/
+
+
+module adder(  input [8:0] inp1,  input [8:0] inp2,  output [8:0] result);
+
+  reg [8:0] carry;
+  reg [8:0] temp_sum;
+
+  always @(inp1 or inp2) begin
+    temp_sum = inp1 ^ inp2 ^ carry;
+    carry = (inp1 & inp2) | ((inp1 ^ inp2) & carry);
+  end
+
+  assign result = temp_sum;
+
+endmodule
+
+module counter (  input clk, rst, enable,  output reg cout,  output reg [3:0] count);
+
+  always@( posedge rst,posedge clk ) begin
+    if (rst) begin
+      count <= 4'b0;
+      cout <= 1'b0;
+    end else if (enable) begin
+      count <= count + 1;
+      cout <= (count == 4'b1111) ? 1'b1 : 1'b0; 
+    end
+  end
+
+endmodule
+
+
+
+/*module MAC (
+  input clk,
+  input reset,
+  input [7:0] a,
+  input [7:0] b,
+  input enable,
+  output [7:0] result
+);
+wire [15:0] mult = a * b;
+	reg [11:0] temp;
+	always@(posedge clk )
+	begin
+		if(reset)
+			temp <= 12'b0;
+		else if(enable)
+		begin
+			temp <= temp + mult[15:8];
+		end
+	end
+	assign result = temp[11:4];
+endmodule
+*/
+
+module mac (
+  input clk, rst,
+  input [7:0] inp1,
+  input [7:0] inp2,
+  input en,
+  output [7:0] out
+);
+  reg [15:0] mult;
+  reg [11:0] temp_reg;
+
+  always @(posedge clk , posedge rst) begin
+    if (rst) begin
+      temp_reg <= 0;
+    end else if (en) begin
+      mult <= inp1 * inp2;
+      temp_reg <= temp_reg + mult[15:8];
+    end
+  end
+
+  assign out = temp_reg[11:4];
+endmodule
